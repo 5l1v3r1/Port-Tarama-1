@@ -5,7 +5,7 @@ rServer = input("IP Adresini Giriniz: ")
 zamanAsımı = 3
 
 try:
-    for port in range(1,1001):
+    for port in range(20,1001):
         baglantı = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         baglantı.settimeout(zamanAsımı)
         sonuc = baglantı.connect_ex((rServer, port))
